@@ -18,9 +18,17 @@
     --midnight-voilet: #1f242d;
     --groung-green: #07252d;
 }
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .white{
     color: var(--white);
     fill: var(--white);
+}
+.light-white{
+    color: #6F6F6F;
 }
 span{
     font-size: 2rem;
