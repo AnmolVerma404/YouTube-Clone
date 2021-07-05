@@ -27,20 +27,30 @@
     width: 100vw;
 }
 #header{
-    padding: 2rem;
+    /* padding: 2rem; */
     color: var(--white);
+}
+nav{
+    /* background-color: #00ffff; */
+    flex-grow: 1;   
 }
 nav ul{
     display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     list-style: none;
 }
-nav ul a li{
+nav ul li{
+    padding: 1.2rem;
+}
+nav ul li a{
     display: flex;
     font-size: 2rem;
     color: var(--white);
+    text-decoration: none;
 }
-nav ul a li h1{
+nav ul li a h1{
     font-size: 2rem;
     font-weight:bolder;
 }
@@ -61,10 +71,16 @@ a h1{
     border: none;
     padding: 0.7rem;
 }
-ul a li span{
+ul li a span{
     text-align: center;
     width: 4rem;
     border-radius: 50%;
     background-color: var(--raspbarry);
     padding: 0.5rem;
+}
+#account{
+    margin-right: 3rem;
+}
+nav ul li:nth-of-type(4){
+    margin-left: auto;
 }
