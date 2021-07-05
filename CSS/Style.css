@@ -20,9 +20,7 @@
     --groung-green: #07252d;
     --youTubeDarkMode: #202020;
 }
-.white{
-    color: var(--white);
-}
+
 .container{
     background-color: var(--youTubeDarkMode);
     height: 100vh;
@@ -39,6 +37,8 @@ nav ul{
 }
 nav ul a li{
     display: flex;
+    font-size: 2rem;
+    color: var(--white);
 }
 nav ul a li h1{
     font-size: 2rem;
@@ -60,4 +60,11 @@ a h1{
     background-color: #000000;
     border: none;
     padding: 0.7rem;
+}
+ul a li span{
+    text-align: center;
+    width: 4rem;
+    border-radius: 50%;
+    background-color: var(--raspbarry);
+    padding: 0.5rem;
 }
