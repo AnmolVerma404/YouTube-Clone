@@ -30,35 +30,33 @@
     /* padding: 2rem; */
     color: var(--white);
 }
-nav{
+/* top-#top-nav */
+#top-nav{
     /* background-color: #00ffff; */
     flex-grow: 1;   
 }
-nav ul{
+#top-nav ul{
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     list-style: none;
 }
-nav ul li{
+#top-nav ul li{
     padding: 1.2rem;
 }
-nav ul li a{
+#top-nav ul li a{
     display: flex;
     font-size: 2rem;
     color: var(--white);
     text-decoration: none;
 }
-nav ul li a h1{
+#top-nav ul li a h1{
     font-size: 2rem;
     font-weight:bolder;
 }
-#leftNavbar{
 
-}
-
-.youTubeIconimg{
+.youTubeIconImg{
     height: 2.5rem;
 }
 a h1{
@@ -89,7 +87,7 @@ input:focus{
 .audioSearch{
     padding-left: 1.5rem;
 }
-ul li a span{
+#top-nav ul li a span{
     text-align: center;
     width: 4rem;
     border-radius: 50%;
@@ -99,6 +97,39 @@ ul li a span{
 #account{
     margin-right: 3rem;
 }
-nav ul li:nth-of-type(4){
+#top-nav ul li:nth-of-type(4){
     margin-left: auto;
+}
+
+/* #top-nav-left-close */
+
+#nav-left-close{
+    width: 10rem;
+    padding: 2rem;
+}
+#nav-left-close a{
+    color: #aaaaaa;
+    text-align: center;
+}
+#nav-left-close .svg{
+    height: 3rem;
+    width: 3rem;
+}
+#nav-left-close ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#nav-left-close .home{
+    color: #ffffff;
+}
+#nav-left-close .subscription{
+    margin-left: 1.6rem;
+}
+
+/* #top-nav-left-open */
+
+#nav-left-open{
+    /* display: none; */
 }

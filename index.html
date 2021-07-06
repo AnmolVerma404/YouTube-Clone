@@ -13,7 +13,7 @@
   <body>
     <div class="container">
       <header id="header">
-        <nav>
+        <nav id="top-nav">
           <ul>
             <li id="leftNavbarli">
               <a href="#leftNavbar">
@@ -55,7 +55,7 @@
                   <img
                     src="/Images/YouTube-logo.png"
                     alt=""
-                    class="youTubeIconimg"
+                    class="youTubeIconImg"
                   />
                 </div>
                 <div class="websiteName">
@@ -95,10 +95,11 @@
                   stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  class="feather feather-mic "
+                  class="feather feather-mic"
                 >
                   <path
-                    d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" class="white"
+                    d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"
+                    class="white"
                   ></path>
                   <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
                   <line x1="12" y1="19" x2="12" y2="23"></line>
@@ -172,6 +173,110 @@
             <!-- Learning clickable nav bar -->
           </ul>
         </nav>
+        <nav id="nav-left-close">
+          <ul>
+            <li>
+              <a href="#home">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-home black svg"
+                >
+                  <path
+                    d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+                    class="white"
+                  ></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+                <h2 class="home">Home</h2>
+              </a>
+            </li>
+            <li>
+              <a href="#explore">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-compass svg"
+                >
+                  <circle cx="12" cy="12" r="10" class="light-white"></circle>
+                  <polygon
+                    points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"
+                    class="black"
+                  ></polygon>
+                </svg>
+                <h2>Explore</h2>
+              </a>
+            </li>
+            <li>
+              <a href="#subscription">
+                <svg
+                  viewBox="0 0 24 24"
+                  preserveAspectRatio="xMidYMid meet"
+                  focusable="false"
+                  style="
+                    pointer-events: none;
+                    display: block;
+                    width: 24;
+                    height: 24;
+                  "
+                  class="style-scope yt-icon svg light-white subscription"
+                >
+                  <g class="style-scope yt-icon">
+                    <path
+                      d="M18.7 8.7H5.3V7h13.4v1.7zm-1.7-5H7v1.6h10V3.7zm3.3 8.3v6.7c0 1-.7 1.6-1.6 1.6H5.3c-1 0-1.6-.7-1.6-1.6V12c0-1 .7-1.7 1.6-1.7h13.4c1 0 1.6.8 1.6 1.7zm-5 3.3l-5-2.7V18l5-2.7z"
+                      class="style-scope yt-icon"
+                    ></path>
+                  </g>
+                </svg>
+                <h2>Subscription</h2>
+              </a>
+            </li>
+            <li>
+              <a href="#library">
+                <svg
+                  viewBox="0 0 24 24"
+                  preserveAspectRatio="xMidYMid meet"
+                  focusable="false"
+                  style="
+                    pointer-events: none;
+                    display: block;
+                    width: 24;
+                    height: 24;
+                  "
+                  class="style-scope yt-icon svg light-white"
+                >
+                  <g class="style-scope yt-icon">
+                    <path
+                      fill="none"
+                      d="M0 0h24v24H0z"
+                      class="style-scope yt-icon"
+                    ></path>
+                    <path
+                      d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 12.5v-9l6 4.5-6 4.5z"
+                      class="style-scope yt-icon"
+                    ></path>
+                  </g>
+                </svg>
+                <h2>Library</h2>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <nav id="nav-left-open"></nav>
       </header>
     </div>
   </body>

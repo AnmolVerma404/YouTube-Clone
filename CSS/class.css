@@ -23,13 +23,25 @@
     justify-content: center;
     align-items: center;
 }
+.black{
+    color: var(--black);
+    fill: var(--black);
+}
 .white{
     color: var(--white);
     fill: var(--white);
 }
 .light-white{
     color: #6F6F6F;
+    fill: #7e7e7e;
 }
 span{
     font-size: 2rem;
+}
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+li{
+    list-style: none;
 }
