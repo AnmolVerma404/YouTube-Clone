@@ -18,6 +18,11 @@
     --midnight-voilet: #1f242d;
     --groung-green: #07252d;
 }
+.hLine{
+    height: 1px;
+    width: 100%;
+    background-color: #7e7e7e;
+}
 .flex-center{
     display: flex;
     justify-content: center;

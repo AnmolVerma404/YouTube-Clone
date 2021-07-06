@@ -25,6 +25,7 @@
     background-color: var(--youTubeDarkMode);
     height: 100vh;
     width: 100vw;
+    overflow-x: hidden;
 }
 #header{
     /* padding: 2rem; */
@@ -103,36 +104,91 @@ input:focus{
 
 /* #top-nav-left-close */
 
-#nav-left-close{
+.nav-left-close{
+    display: none;
     width: 10rem;
     padding: 2rem;
 }
-#nav-left-close ul{
+.nav-left-close-display{
+    display: block;
+}
+.nav-left-close ul{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-#nav-left-close ul li{
+.nav-left-close ul li{
     margin-bottom: 3rem;
 }
-#nav-left-close a{
+.nav-left-close a{
     color: #aaaaaa;
     text-align: center;
 }
-#nav-left-close .svg{
+.nav-left-close .svg,.nav-left-open .svg{
     height: 3rem;
     width: 3rem;
 }
-#nav-left-close .home{
+.nav-left-close .home,.nav-left-open .home{
     color: #ffffff;
 }
-#nav-left-close .subscription{
+.nav-left-close .subscription{
     margin-left: 1.6rem;
 }
 
 /* #top-nav-left-open */
 
-#nav-left-open{
-    /* display: none; */
+.nav-left-open{
+    display: block;
+    width: 15vw;
+    /* background-color: red; */
+}
+.nav-left-open-display{
+    display: none;
+}
+.nav-left-open ul{
+    padding: 2rem;
+    width: 14vw;
+}
+.nav-left-open li{
+    margin-bottom: 2rem;
+}
+.nav-left-open li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-left-open li a .svgDiv,
+#youtuberName .youTuberImgDiv{
+    width: 30%;
+}
+.nav-left-open li a .h2Div,
+#youtuberName .youTuberNameDiv{
+    width: 70%;
+}
+.nav-left-open li a .svg{
+ margin-right: 1rem;   
+}
+.nav-left-open h2{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.subscribedChannels >h2{
+    /* font-size: 1.5rem; */
+    text-align: center;
+    margin-right: 7rem;
+    padding-top: 1rem;
+}
+#youtuberName li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.youTuberImgDiv img{
+    height: 27px;
+    width: 27px;
+    border-radius: 50%;
+}
+.youTuberImgDiv svg{
+    margin-right: 6rem;
 }
