@@ -107,6 +107,15 @@ input:focus{
     width: 10rem;
     padding: 2rem;
 }
+#nav-left-close ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#nav-left-close ul li{
+    margin-bottom: 3rem;
+}
 #nav-left-close a{
     color: #aaaaaa;
     text-align: center;
@@ -114,12 +123,6 @@ input:focus{
 #nav-left-close .svg{
     height: 3rem;
     width: 3rem;
-}
-#nav-left-close ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 #nav-left-close .home{
     color: #ffffff;
