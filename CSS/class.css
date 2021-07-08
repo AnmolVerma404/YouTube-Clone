@@ -50,3 +50,16 @@ a{
 li{
     list-style: none;
 }
+.allHover:hover{
+    background-color: #383838;
+}
+/* .allHoverRec:hover{
+    background-color: #4e4e4e;
+}
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent,#cc1901);
+    border-radius: 6px;
+} */

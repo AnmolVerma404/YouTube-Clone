@@ -1,6 +1,7 @@
 function appFunctions() {
   youtuberName();
   navSlide();
+  videoGrid();
 }
 appFunctions();
 function youtuberName() {
@@ -28,7 +29,7 @@ function youtuberName() {
     let listItems = "";
     for (let i = 0; i < nameArray.length; i++) {
       listItems += `
-      <li>
+      <li class="allHover">
         <div class="youTuberImgDiv">
             <img src="${profilePicArray[i]}" alt="" />
         </div>
@@ -40,7 +41,7 @@ function youtuberName() {
     }
     // For show more option:-
     listItems += `
-    <li>
+    <li class="allHover">
         <a href="#showMore">
         <div class="youTuberImgDiv">
             <svg
@@ -74,4 +75,55 @@ function navSlide() {
     navSlideBarClose.classList.toggle("nav-left-close-display");
     navSlideBarOpen.classList.toggle("nav-left-open-display");
   });
+}
+
+function videoGrid() {
+  let videoEl = document.querySelector(".videosGrid");
+  let thumbnailArray = [];
+  let timeArray = [];
+  let viewsArray = [];
+  let yearArray = [];
+  for (let i = 1; i <= 36; i++) {
+
+    let min = Math.floor(Math.random() * 13) + 1;
+    let sec = Math.floor(Math.random() * 26) + 1;
+    let view = Math.floor(Math.random()*100) +1;
+    let old = Math.floor(Math.random()*5) +1;
+
+    view = view + "k";
+    if (sec < 10) {
+      sec  = "0" + sec;
+    }
+    thumbnailArray.push(`/Images/Thumbnail/${i}.jpg`);
+    timeArray.push(`${min}:${sec}`);
+    viewsArray.push(view);
+    yearArray.push(old);
+  }
+  // console.log(thumbnailArray);
+  // console.log(timeArray);
+  console.log(viewsArray);
+  console.log(yearArray);
+  let listItems = "";
+  for (let i = 0; i < 36; i++) {
+    listItems += `
+    <div class="video">
+    <div class="thumbnail">
+      <img src="${thumbnailArray[i]}" alt="">
+      <div class="time">${timeArray[i]}</div>
+    </div>
+    <div class="info">
+      <div class="profilePic">
+        <img src="/Images/Profile pic/1.jpg" alt="">
+      </div>
+      <div class="titleAndInfo">
+        <div class="title">Lorem ipsum dolor sit amet.</div>
+        <div class="channelName">Lorem, ipsum.</div>
+        <div class="videoLikeAndDate">${viewsArray[i]} views . ${yearArray[i]} years ago</div>
+      </div>
+    </div>
+  </div>
+    `;
+  }
+  videoEl.innerHTML = listItems;
+  console.log(videoEl);
 }
