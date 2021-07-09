@@ -183,9 +183,6 @@ input:focus {
   top: 0;
   z-index: 900;
 }
-.nav-left-open:hover {
-  overflow-y: scroll;
-}
 
 .nav-left-open-display {
   display: none;
