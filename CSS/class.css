@@ -53,6 +53,15 @@ li{
 .allHover:hover{
     background-color: #383838;
 }
+.stickyPosition{
+    position: sticky;
+}
+.displayNone{
+    display: none;
+}
+.displayBlock{
+    display: block;
+}
 /* .allHoverRec:hover{
     background-color: #4e4e4e;
 }

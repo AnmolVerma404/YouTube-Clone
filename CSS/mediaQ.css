@@ -1,0 +1,76 @@
+@media screen and (max-width: 1527.1px) {
+  .recommandation {
+    display: none;
+  }
+}
+@media screen and (max-width: 1293.6px) {
+  #searchBar {
+    margin-left: 10rem;
+  }
+}
+@media screen and (max-width: 1098.4px) {
+  #searchBar {
+    margin-left: 5rem;
+  }
+}
+@media screen and (max-width: 1005.6px) {
+  #searchBar {
+    margin-left: 0rem;
+  }
+}
+@media screen and (max-width: 931.2px) {
+  #search {
+    width: 37vw;
+  }
+  #top-nav ul li:nth-of-type(4) {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 912px) {
+  #search {
+    width: 25vw;
+  }
+}
+@media screen and (max-width: 755px) {
+  #search {
+    width: 10vw;
+  }
+}
+@media screen and (max-width: 640px) {
+  #search {
+    display: none;
+  }
+  .searchIcon {
+    width: 4rem;
+    height: 3rem;
+  }
+}
+
+@media screen and (max-width: 578.4px) {
+  #account {
+    margin-right: 0rem;
+  }
+}
+@media screen and (max-width: 548.8px) {
+  #top-nav ul li {
+    padding: 1.2rem 0.3rem 1.2rem 0.3rem;
+  }
+}
+/* Video Grid 👿👿👿 */
+
+@media screen and (max-width: 1298.4px) {
+    .nav-left-open{
+        display: none;
+    }
+    .nav-left-close{
+        display: block  ;
+    }
+}
+@media screen and (max-width: 557.6px){
+    .nav-left-close{
+        display: none;
+    }
+    .video {
+        margin-left: 5rem;
+    }
+}

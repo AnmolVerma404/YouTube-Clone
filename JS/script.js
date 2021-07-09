@@ -83,16 +83,15 @@ function videoGrid() {
   let timeArray = [];
   let viewsArray = [];
   let yearArray = [];
-  for (let i = 1; i <= 36; i++) {
-
+  for (let i = 1; i <= 16; i++) {
     let min = Math.floor(Math.random() * 13) + 1;
     let sec = Math.floor(Math.random() * 26) + 1;
-    let view = Math.floor(Math.random()*100) +1;
-    let old = Math.floor(Math.random()*5) +1;
+    let view = Math.floor(Math.random() * 100) + 1;
+    let old = Math.floor(Math.random() * 5) + 1;
 
     view = view + "k";
     if (sec < 10) {
-      sec  = "0" + sec;
+      sec = "0" + sec;
     }
     thumbnailArray.push(`/Images/Thumbnail/${i}.jpg`);
     timeArray.push(`${min}:${sec}`);
@@ -104,12 +103,18 @@ function videoGrid() {
   console.log(viewsArray);
   console.log(yearArray);
   let listItems = "";
-  for (let i = 0; i < 36; i++) {
+  for (let i = 0; i < 16; i++) {
     listItems += `
     <div class="video">
     <div class="thumbnail">
       <img src="${thumbnailArray[i]}" alt="">
       <div class="time">${timeArray[i]}</div>
+      <div class="hoverWatchLater">
+        <svg class="white" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><rect fill="none" height="24" width="24" x="0"/></g><g><g><path d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M12,20c-4.41,0-8-3.59-8-8s3.59-8,8-8s8,3.59,8,8 S16.41,20,12,20z M12.5,7H11v6l5.2,3.2l0.8-1.3l-4.5-2.7V7z"/></g></g></svg>
+      </div>
+      <div class="hoverAddToQueue">
+        <svg class="white" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><rect fill="none" height="24" width="24"/></g><g><g><path d="M19,13h-6v6h-2v-6H5v-2h6V5h2v6h6V13z"/></g></g></svg>
+    </div>
     </div>
     <div class="info">
       <div class="profilePic">
