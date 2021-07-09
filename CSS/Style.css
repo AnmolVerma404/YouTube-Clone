@@ -28,7 +28,6 @@
   overflow-x: hidden;
 }
 #header {
-  /* padding: 2rem; */
   color: var(--white);
   position: sticky;
   top: 0;
@@ -38,8 +37,6 @@
 #top-nav {
   background-color: var(--youTubeDarkMode);
   flex-grow: 1;
-
-  /* opacity: 0.3; Change other id opacity for correct effect*/
 }
 #top-nav ul {
   display: flex;
@@ -169,16 +166,12 @@ input:focus {
 
 /* left-nav 👿👿*/
 
-.left-nav {
-  /* overflow-y: scroll; */
-}
 
 /* #top-nav-left-open👿👿 */
 
 .nav-left-open {
   display: block;
   width: 15vw;
-  /* overflow-y: scroll; */
   position: sticky;
   top: 0;
   z-index: 900;
@@ -215,7 +208,6 @@ input:focus {
   font-weight: bold;
 }
 .subscribedChannels > h2 {
-  /* font-size: 1.5rem; */
   text-align: center;
   margin-right: 7rem;
   padding-top: 1rem;
@@ -266,12 +258,10 @@ input:focus {
 
 .videosGrid {
   display: grid;
-  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
   grid-template-columns: repeat(auto-fit,minmax(31rem,1fr));
   background-color: #181818;
   padding-left: 1.5rem;
   padding-top: 1rem;
-  /* width: 130rem; */
 }
 .video {
   margin-bottom: 3rem;
@@ -284,7 +274,6 @@ input:focus {
 .thumbnail img {
   width: 297px;
   height: 166.383px;
-  /* position: relative; */
 }
 .profilePic img {
   width: 30px;
@@ -346,7 +335,4 @@ input:focus {
   top: 50px;
   right: 35px;
   padding: 3px 5px 1px 5px;
-}
-.video:hover {
-  
 }

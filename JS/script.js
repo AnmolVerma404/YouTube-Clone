@@ -98,8 +98,6 @@ function videoGrid() {
     viewsArray.push(view);
     yearArray.push(old);
   }
-  // console.log(thumbnailArray);
-  // console.log(timeArray);
   console.log(viewsArray);
   console.log(yearArray);
   let listItems = "";
