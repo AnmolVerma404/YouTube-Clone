@@ -312,7 +312,7 @@ input:focus {
 .time {
   position: absolute;
   bottom: 14px;
-  right: 40px;
+  right: 15px;
   color: white;
   background-color: black;
   padding: 0.4rem;
